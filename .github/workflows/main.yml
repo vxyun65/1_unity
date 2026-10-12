@@ -3,6 +3,10 @@ name: Test and Build Project
 on:
   workflow_dispatch:
 
+permissions:
+  contents: read
+  checks: write
+  
 jobs:
   test:
     name: Test in ${{ matrix.testMode }}
